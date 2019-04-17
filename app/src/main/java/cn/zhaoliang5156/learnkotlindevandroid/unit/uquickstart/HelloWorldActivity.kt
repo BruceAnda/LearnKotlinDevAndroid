@@ -17,7 +17,9 @@ class HelloWorldActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hello_world)
 
+        // 给界面上的控件设置点击事件
         tv_hello.setOnClickListener {
+            // 改变控件的内容
             tv_hello.text = "I Love Kotlin And Android!"
         }
     }
