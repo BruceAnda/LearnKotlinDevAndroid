@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LearnKotlinDevAndroid</string>
+    <string name="uquickstart_hello">来点击我啊！</string>
+</resources>
