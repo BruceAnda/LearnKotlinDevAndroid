@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.zhaoliang5156.learnkotlindevandroid">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +20,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".unit.uquickstart.HelloWorldActivity" />
+        <activity android:name=".unit.uactivity.UseActivity" />
+        <activity android:name=".unit.uactivity.useactivity.startandfinish.StartActivity" />
+        <activity android:name=".unit.uactivity.useactivity.stateandlifecycle.StateAndLifecycleActivity" />
+        <activity android:name=".unit.uactivity.useactivity.phoneandsms.PhoneAndSmsActivity" />
+        <activity android:name=".unit.uactivity.useactivity.startandfinish.FinishActivity" />
+        <activity
+            android:name=".unit.uactivity.useactivity.stateandlifecycle.LifecycleSecondActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".unit.uactivity.useactivity.launchmode.BackStackAndLunchModeActivity"
+            android:launchMode="singleTask" />
+        <!--android:launchMode="singleTop"/>-->
+        <activity
+            android:name=".unit.uactivity.useactivity.launchmode.LaunchModeSecondActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".unit.uactivity.useactivity.launchmode.LaunchModeThirdActivity"></activity>
     </application>
 
 </manifest>

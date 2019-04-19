@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unit.uactivity.useactivity.launchmode.BackStackAndLunchModeActivity">
+
+    <TextView
+        android:id="@+id/tv_ui_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="界面1" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/tv_ui_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toSecond"
+        android:id="@+id/btn_to_socond"
+        android:text="启动界面2" />
+
+    <Button
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_to_socond"
+        android:layout_height="wrap_content"
+        android:onClick="toOne"
+        android:text="启动界面1" />
+</android.support.constraint.ConstraintLayout>

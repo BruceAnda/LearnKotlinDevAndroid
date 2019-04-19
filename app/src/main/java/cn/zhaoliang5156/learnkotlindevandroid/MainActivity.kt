@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
+import cn.zhaoliang5156.learnkotlindevandroid.unit.uactivity.UseActivity
 import cn.zhaoliang5156.learnkotlindevandroid.unit.uquickstart.HelloWorldActivity
 
 /* *
@@ -45,6 +46,7 @@ class MainActivity : ListActivity() {
         // 跳转到对应的Activity界面
         when (position) {
             0 -> startActivity(Intent(this, HelloWorldActivity::class.java))
+            1 -> startActivity(Intent(this, UseActivity::class.java))
             else -> Toast.makeText(this, "没有开发完成呢！", Toast.LENGTH_SHORT).show()
         }
     }

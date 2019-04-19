@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unit.uactivity.useactivity.phoneandsms.PhoneAndSmsActivity">
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="电话号码:" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入电话号码"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_phone"
+        app:layout_constraintLeft_toRightOf="@id/tv_phone" />
+
+    <TextView
+        android:id="@+id/tv_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="短信内容:"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone" />
+
+    <EditText
+        android:id="@+id/et_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入短信内容"
+        app:layout_constraintLeft_toRightOf="@id/tv_sms"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_sms" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_sms"
+        android:text="拨打电话" />
+
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_call"
+        android:layout_height="wrap_content"
+        android:text="发送短信" />
+</android.support.constraint.ConstraintLayout>
