@@ -9,6 +9,7 @@ import android.widget.ListView
 import android.widget.Toast
 import cn.zhaoliang5156.learnkotlindevandroid.unit.uactivity.UseActivity
 import cn.zhaoliang5156.learnkotlindevandroid.unit.uquickstart.HelloWorldActivity
+import cn.zhaoliang5156.learnkotlindevandroid.unit.uuserinterface.UseViewActivity
 
 /* *
  * @descroption: 程序主界面
@@ -47,6 +48,7 @@ class MainActivity : ListActivity() {
         when (position) {
             0 -> startActivity(Intent(this, HelloWorldActivity::class.java))
             1 -> startActivity(Intent(this, UseActivity::class.java))
+            2 -> startActivity(Intent(this, UseViewActivity::class.java))
             else -> Toast.makeText(this, "没有开发完成呢！", Toast.LENGTH_SHORT).show()
         }
     }

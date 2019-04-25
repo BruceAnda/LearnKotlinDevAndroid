@@ -31,11 +31,16 @@
         <activity
             android:name=".unit.uactivity.useactivity.launchmode.BackStackAndLunchModeActivity"
             android:launchMode="singleTask" />
-        <!--android:launchMode="singleTop"/>-->
+        <!-- android:launchMode="singleTop"/> -->
         <activity
             android:name=".unit.uactivity.useactivity.launchmode.LaunchModeSecondActivity"
             android:launchMode="singleInstance" />
-        <activity android:name=".unit.uactivity.useactivity.launchmode.LaunchModeThirdActivity"></activity>
+        <activity android:name=".unit.uactivity.useactivity.launchmode.LaunchModeThirdActivity" />
+        <activity android:name=".unit.uuserinterface.UseViewActivity" />
+        <activity android:name=".unit.uuserinterface.component.ComponentActivity" />
+        <activity android:name=".unit.uuserinterface.dialog.DialogActivity" />
+        <activity android:name=".unit.uuserinterface.menu.MenuActivity" />
+        <activity android:name=".unit.uuserinterface.progress.ProgressActivity"></activity>
     </application>
 
 </manifest>
