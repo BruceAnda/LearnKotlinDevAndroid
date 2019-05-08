@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".unit.uuserinterface.styleandtheme.StyleAndThemeActivity">
+
+    <TextView
+        style="@style/MyTextStyle"
+        android:text="SIM卡变更报警" />
+
+    <TextView
+        style="@style/MyTextStyle"
+        android:text="GPS定位" />
+
+    <TextView
+        style="@style/MyTextStyle"
+        android:text="远程销毁数据" />
+
+    <TextView
+        style="@style/MyTextStyle"
+        android:text="远程锁屏" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxxx"
+        android:textAppearance="@android:style/TextAppearance" />
+</LinearLayout>

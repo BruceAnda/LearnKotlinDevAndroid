@@ -40,7 +40,20 @@
         <activity android:name=".unit.uuserinterface.component.ComponentActivity" />
         <activity android:name=".unit.uuserinterface.dialog.DialogActivity" />
         <activity android:name=".unit.uuserinterface.menu.MenuActivity" />
-        <activity android:name=".unit.uuserinterface.progress.ProgressActivity"></activity>
+        <activity android:name=".unit.uuserinterface.progress.ProgressActivity" />
+        <activity android:name=".unit.uuserinterface.layout.LayoutActivity" />
+        <activity android:name=".unit.uuserinterface.listview.ListViewActivity" />
+        <activity android:name=".unit.uuserinterface.gridview.GridActivity" />
+        <activity
+            android:name=".unit.uuserinterface.styleandtheme.StyleAndThemeActivity"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".unit.uuserinterface.layout.linearlayout.LinearLayoutActivity" />
+        <activity android:name=".unit.uuserinterface.layout.relativelayout.RelativeLayoutActivity" />
+        <activity android:name=".unit.uuserinterface.layout.framelayout.FrameLayoutActivity" />
+        <activity android:name=".unit.uuserinterface.listview.arrayadapter.ArrayAdapterActivity" />
+        <activity android:name=".unit.uuserinterface.listview.baseadapter.BaseAdapterActivity" />
+        <activity android:name=".unit.uuserinterface.listview.simpleadapter.SimpleAdapterActivity" />
+        <activity android:name=".unit.uuserinterface.listview.applist.AppListActivity"></activity>
     </application>
 
 </manifest>

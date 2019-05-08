@@ -9,8 +9,12 @@ import android.widget.ListView
 import android.widget.Toast
 import cn.zhaoliang5156.learnkotlindevandroid.unit.uuserinterface.component.ComponentActivity
 import cn.zhaoliang5156.learnkotlindevandroid.unit.uuserinterface.dialog.DialogActivity
+import cn.zhaoliang5156.learnkotlindevandroid.unit.uuserinterface.gridview.GridActivity
+import cn.zhaoliang5156.learnkotlindevandroid.unit.uuserinterface.layout.LayoutActivity
+import cn.zhaoliang5156.learnkotlindevandroid.unit.uuserinterface.listview.ListViewActivity
 import cn.zhaoliang5156.learnkotlindevandroid.unit.uuserinterface.menu.MenuActivity
 import cn.zhaoliang5156.learnkotlindevandroid.unit.uuserinterface.progress.ProgressActivity
+import cn.zhaoliang5156.learnkotlindevandroid.unit.uuserinterface.styleandtheme.StyleAndThemeActivity
 
 /* *
  * @descroption: 使用View
@@ -27,7 +31,11 @@ class UseViewActivity : ListActivity() {
                 "基本UI控件",
                 "菜单",
                 "进度条",
-                "对话框"
+                "对话框",
+                "布局",
+                "列表",
+                "样式和主题",
+                "网格"
         ))
     }
 
@@ -37,6 +45,10 @@ class UseViewActivity : ListActivity() {
             1 -> startActivity(Intent(this, MenuActivity::class.java))
             2 -> startActivity(Intent(this, ProgressActivity::class.java))
             3 -> startActivity(Intent(this, DialogActivity::class.java))
+            4 -> startActivity(Intent(this, LayoutActivity::class.java))
+            5 -> startActivity(Intent(this, ListViewActivity::class.java))
+            6 -> startActivity(Intent(this, StyleAndThemeActivity::class.java))
+            7 -> startActivity(Intent(this, GridActivity::class.java))
             else -> Toast.makeText(this, "没有完成呢！", Toast.LENGTH_SHORT).show()
         }
     }
